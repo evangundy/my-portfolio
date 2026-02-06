@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio — Emily</title>
+  <style>
+    :root{--accent:#2b8fbf;--bg:#f7fafc;--card:#ffffff;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+    .container{width:90%;max-width:1000px;margin:0 auto}
+    header{background:linear-gradient(90deg,#ffffffcc, #f0f8ffcc);backdrop-filter:blur(6px);border-bottom:1px solid #e6eef7}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .site-title{font-size:1.25rem;font-weight:700;color:var(--accent);margin:0}
+    nav ul{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .job{margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #e5e7eb}
+    .job:last-child{border-bottom:none}
+    .job-header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:4px}
+    .job-title{font-weight:700;color:#111}
+    .job-dates{color:var(--muted);font-size:0.9rem}
+    .job-company{color:var(--accent);font-weight:600}
+    .job-desc{color:var(--muted);margin-top:8px;line-height:1.6}
+    #hero{padding:72px 0;text-align:center}
+    #hero h2{font-size:2rem;margin:0 0 8px}
+    #hero p{color:var(--muted);margin:0 0 18px}
+    .cta{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+    section{padding:48px 0}
+    .card{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(16,24,40,0.04)}
+    #about .two-col{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:start}
+    #skills .skills-grid{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:#eef7fb;color:var(--accent);padding:8px 12px;border-radius:999px;font-weight:600}
+    footer{padding:20px 0;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media (max-width:720px){#about .two-col{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <h1 class="site-title">Emily VanGundy</h1>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero">
+      <h2>Emily VanGundy</h2>
+      <p style="color:var(--muted);margin-bottom:6px">(970) 412-8025 | Colorado Springs, CO</p>
+      <a class="cta" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="about">
+      <div class="two-col">
+        <div class="card">
+          <h3>About Me</h3>
+          <p>Dependable and hardworking professional with experience in customer-facing roles, physically active work environments, and event-based settings. Comfortable assisting customers, supporting operations, and representing organizations in public-facing roles. Known for reliability, professionalism, and a strong work ethic.</p>
+        </div>
+        <aside class="card">
+          <h4>Quick Info</h4>
+          <p style="margin:6px 0;color:var(--muted)">Location: Colorado Springs, CO</p>
+          <p style="margin:6px 0;color:var(--muted)">Phone: (970) 412-8025</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="card">
+        <h3>Work Experience</h3>
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Rock Wall Team Member</div>
+              <div class="job-company">Life Time Fitness</div>
+            </div>
+            <div class="job-dates">Sep 2024 - Present</div>
+          </div>
+          <p class="job-desc">Provided friendly, professional customer service in a fast-paced environment while assisting with equipment use and safety procedures. Maintained an organized workspace through regular inspections and safety standards in a physically active role.</p>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Adventure Guide</div>
+              <div class="job-company">Wilderness Ranch Young Life Camp</div>
+            </div>
+            <div class="job-dates">May 2024 - Aug 2025</div>
+          </div>
+          <p class="job-desc">Led outdoor adventure experiences including backpacking trips and experiential learning activities. Prioritized participant safety through effective risk management and briefings. Fostered engagement, teamwork, and leadership development in dynamic outdoor environments.</p>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Medical Assistant</div>
+              <div class="job-company">Pikes Peak Foot & Ankle Clinic</div>
+            </div>
+            <div class="job-dates">Sep 2024 - May 2025</div>
+          </div>
+          <p class="job-desc">Delivered high-quality front-desk and patient-facing customer service while managing scheduling and in-person inquiries. Maintained accurate records with strong attention to detail and clear communication.</p>
+        </div>
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Customer Service Assistant</div>
+              <div class="job-company">UCCS Student Employment</div>
+            </div>
+            <div class="job-dates">Feb 2022 - May 2024</div>
+          </div>
+          <p class="job-desc">Provided consistent, high-quality customer service while assisting walk-in clients and supporting daily office operations. Recognized for reliability, organization, and strong follow-through.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="card">
+        <h3>Education</h3>
+        <div class="job">
+          <div class="job-header">
+            <div>
+              <div class="job-title">Bachelor of Science</div>
+              <div class="job-company">University of Colorado Colorado Springs</div>
+            </div>
+            <div class="job-dates">2021 - 2024</div>
+          </div>
+          <p class="job-desc">Emphasis in Marketing with a minor in Finance</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h3>Skills</h3>
+        <div class="skills-grid" style="margin-top:12px">
+          <span class="skill">Customer Service</span>
+          <span class="skill">Organization</span>
+          <span class="skill">Teamwork</span>
+          <span class="skill">Communication</span>
+          <span class="skill">Physical Work</span>
+          <span class="skill">Microsoft Office</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h3>Contact</h3>
+        <p style="color:var(--muted)">Email: <a href="mailto:emily.vangundy01@gmail.com">emily.vangundy01@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Emily — Built with simple HTML & CSS</p>
+    </div>
+  </footer>
+</body>
+</html>
